@@ -58,7 +58,7 @@
             }
 
             var origValue = obj[propertyName],
-                isArray = Array.isArray(origValue), 
+                isArray = Array.isArray(origValue),
                 observable = ko.isObservable(origValue) ? origValue
                                               : isArray ? ko.observableArray(origValue)
                                                         : ko.observable(origValue);
